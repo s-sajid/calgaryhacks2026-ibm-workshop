@@ -17,7 +17,7 @@ You will run 2 notebooks:
 
 By the end, you will know how to:
 
-- connect a Python app to `https://ollama.com`
+- connect a Python app to [Ollama](https://ollama.com)
 - store secrets safely in a `.env` file
 - run notebooks with `uv` + JupyterLab
 - use an "agentic" workflow to review a project and produce actionable tasks
@@ -33,6 +33,11 @@ By the end, you will know how to:
 ---
 
 ## Setup (Step-by-Step)
+
+Repository links:
+
+- Workshop repo: [s-sajid/calgaryhacks2026-ibm-workshop](https://github.com/s-sajid/calgaryhacks2026-ibm-workshop)
+- Sample repo for analyzer: [yyc-hacks/calgary-accessibility](https://github.com/yyc-hacks/calgary-accessibility)
 
 ### 1. Clone the repository
 
@@ -63,7 +68,7 @@ After install, confirm:
 uv --version
 ```
 
-Full install instructions: `https://docs.astral.sh/uv/getting-started/installation/`
+Full install instructions: [uv installation docs](https://docs.astral.sh/uv/getting-started/installation/)
 
 ### 3. Install project dependencies
 
@@ -75,8 +80,8 @@ uv sync
 
 ### 4. Create an Ollama API key
 
-1. Go to `https://ollama.com` and sign in (or create an account).
-2. Open API key settings: `https://ollama.com/settings/keys`.
+1. Go to [ollama.com](https://ollama.com) and sign in (or create an account).
+2. Open API key settings: [ollama.com/settings/keys](https://ollama.com/settings/keys).
 3. Generate a new key and copy it.
 
 ### 5. Configure environment variables
@@ -125,7 +130,7 @@ Run cells from top to bottom in each notebook.
 For `agentic_project_analyzer.ipynb`, update these config values before running:
 
 - `ANALYZE_REPO_PATH`: local path to the repo you want to evaluate
-- Sample repo to clone and analyze: `https://github.com/yyc-hacks/calgary-accessibility`
+- Sample repo to clone and analyze: [yyc-hacks/calgary-accessibility](https://github.com/yyc-hacks/calgary-accessibility)
 - `START_DATETIME` / `END_DATETIME`: your hackathon timeline
 - `HACKATHON_OBJECTIVE`: what your team is trying to build
 
@@ -135,7 +140,7 @@ The notebook writes a report file (default: `demo_output.md`) with:
 - 24-hour execution plan
 - judging snapshot and risks
 
-Model options (Ollama Library): `https://ollama.com/library`
+Model options: [Ollama Library](https://ollama.com/library)
 
 ---
 
