@@ -5,12 +5,18 @@ from ollama import Client
 
 load_dotenv()
 
-MODEL = "glm-5"
+# Ollama Local
+MODEL = "granite4:latest" # or granite4:350m
 
-client = Client(
-    host="https://ollama.com",
-    headers={"Authorization": f"Bearer {os.getenv('OLLAMA_API_KEY')}"},
-)
+client = Client()
+
+# # Ollama Cloud
+# MODEL = "glm-5"
+
+# client = Client(
+#     host="https://ollama.com",
+#     headers={"Authorization": f"Bearer {os.getenv('OLLAMA_API_KEY')}"},
+# )
 
 print("Terminal chat started. Type 'exit' or 'quit' to stop.\n")
 print("Welcome to CalgaryHacks 2026! I'm your personal LLM assistant!")
@@ -30,13 +36,13 @@ try:
         if not user_prompt:
             continue
         if user_prompt.lower() in {"exit", "quit"}:
-            print("> Assistant: Goodbye.")
+            print(f"> Assistant ({MODEL}): Goodbye.")
             break
 
         messages.append({"role": "user", "content": user_prompt})
 
-        print("> Assistant: Your Hackathon Assistant is thinking...")
-        print("> Assistant: ", end="", flush=True)
+        print(f"> Assistant ({MODEL}): Your Hackathon Assistant is thinking...")
+        print(f"> Assistant ({MODEL}): ", end="", flush=True)
 
         response = ""
         for chunk in client.chat(model=MODEL, messages=messages, stream=True):
@@ -47,4 +53,4 @@ try:
 
         messages.append({"role": "assistant", "content": response})
 except KeyboardInterrupt:
-    print("\n> Assistant: Goodbye.")
+    print(f"\n> Assistant ({MODEL}): Goodbye.")

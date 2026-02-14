@@ -29,7 +29,7 @@ def get_llm(backend: str):
             },
         )
     elif backend == "ollama_local":
-        model = "granite4:350m"
+        model = "granite4:latest"  # or granite4:350m
         llm = ChatOllama(model=model, base_url="http://localhost:11434")
     elif backend == "openai":
         model = "gpt-5-mini"

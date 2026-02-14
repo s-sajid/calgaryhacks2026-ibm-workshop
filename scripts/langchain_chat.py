@@ -24,7 +24,7 @@ if BACKEND == "ollama_cloud":
         },
     )
 elif BACKEND == "ollama_local":
-    MODEL = "granite4:350m"
+    MODEL = "granite4:latest"  # or granite4:350m
     llm = ChatOllama(model=MODEL, base_url="http://localhost:11434")
 elif BACKEND == "openai":
     MODEL = "gpt-5-mini"
