@@ -4,7 +4,12 @@ from langchain_ollama import ChatOllama
 
 load_dotenv()
 
-BACKEND = "local"  # Set to "local" to use Ollama locally
+"""
+Set to "cloud" to use Ollama Cloud
+or
+Set to "local" to use Ollama locally
+"""
+BACKEND = "local"
 
 user_prompt = "What model are you?"
 
