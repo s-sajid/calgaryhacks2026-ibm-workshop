@@ -6,7 +6,7 @@ from ollama import Client
 load_dotenv()
 
 # Ollama Local
-MODEL = "granite4:latest" # or granite4:350m
+MODEL = "granite4:latest"  # or granite4:350m
 
 client = Client()
 
