@@ -6,7 +6,7 @@ from langchain_ollama import ChatOllama
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 ANALYZE_REPO_PATH = SCRIPT_DIR / "example-project"
-OUTPUT_REPO_PATH = SCRIPT_DIR / "output/analysis_output.md"
+OUTPUT_REPO_PATH = SCRIPT_DIR / "output/analyzer_output.md"
 
 HACKATHON_OBJECTIVE = (
     "Build a simple, user-friendly mobile app that helps professors track, "
