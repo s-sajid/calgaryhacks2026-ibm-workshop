@@ -9,12 +9,9 @@ client = Client(
     headers={"Authorization": f"Bearer {os.getenv('OLLAMA_API_KEY')}"},
 )
 
-system_prompt = "Welcome to CalgaryHacks 2026! Encourage the user with their hackathon and provide them with great ideas"
-
-user_prompt = "Can you suggest a great hackathon idea to impress the judges?"
+user_prompt = "Give me a fun fact about the University of Calgary in one line"
 
 messages = [
-    {"role": "system", "content": system_prompt},
     {"role": "user", "content": user_prompt},
 ]
 
