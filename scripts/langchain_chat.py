@@ -6,7 +6,7 @@ from langchain_openai import ChatOpenAI
 load_dotenv()
 
 # "ollama_local" or "ollama_cloud" or "openai"
-BACKEND = "ollama_local"
+BACKEND = "ollama_cloud"
 
 user_prompt = "What model are you?"
 
