@@ -13,7 +13,7 @@ HACKATHON_OBJECTIVE = (
     "verify, and manage student assignment submissions."
 )
 
-END_DATETIME = "2026-02-15T00:00"
+END_DATETIME = "2026-02-15T12:00"
 
 MODEL_NAME = "granite4:latest"
 OLLAMA_HOST = "http://localhost:11434"
