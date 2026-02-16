@@ -143,6 +143,13 @@ There are no executable scripts in `scripts/output`; this folder stores generate
 - `scripts/output/demo_output.md`: committed sample report output for reference.
 - `scripts/output/analyzer_output.md`: generated when you run the `5_agentic_project_analyzer.py` file.
 
+## `scripts/example-project` Notes
+
+This folder contains an example hackathon project used to demonstrate the multi-agent workflow in `5_agentic_project_analyzer.py` using IBM's latest Granite 4 model.
+
+- Analyzer workflow script: [`scripts/5_agentic_project_analyzer.py`](scripts/5_agentic_project_analyzer.py)
+- Example project source (MIT License, free to use): [hellosagar/AssigmentHub](https://github.com/hellosagar/AssigmentHub)
+
 ## Troubleshooting
 
 - `Missing OLLAMA_API_KEY`: set it in `.env` for cloud scripts.
