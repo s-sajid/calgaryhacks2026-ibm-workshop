@@ -5,13 +5,10 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "ipykernel>=7.2.0",
     "ipython>=9.10.0",
-    "jupyterlab>=4.5.4",
     "langchain-openai>=1.0.0",
     "langchain-ollama>=1.0.1",
     "ollama>=0.6.1",
     "python-dotenv>=1.2.1",
-    "rich>=14.3.2",
     "langchain>=1.2.10",
 ]
